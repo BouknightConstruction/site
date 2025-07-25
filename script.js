@@ -19,7 +19,7 @@ document.getElementById("contactForm")?.addEventListener("submit", async functio
   }
 });
 
-// Scroll reveal effect for fade-in elements
+// Scroll fade-in thingy
 const observer = new IntersectionObserver(
   (entries, observer) => {
     entries.forEach(entry => {
@@ -38,7 +38,7 @@ document.querySelectorAll(".fade-in").forEach(el => {
   observer.observe(el);
 });
 
-// Modal viewer for gallery images
+// Modal view for them gallery images
 document.addEventListener("DOMContentLoaded", function () {
   const modal = document.createElement("div");
   modal.id = "imageModal";
