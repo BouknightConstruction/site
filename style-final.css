@@ -41,14 +41,13 @@ nav a:hover {
 }
 
 .section-img {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  max-height: 250px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
-  display: block;
   border-radius: 12px;
-  margin: 0 auto;
+  display: block;
+  margin: 1rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
 }
 
 .text {
@@ -200,14 +199,13 @@ nav a.active {
 }
 
 .section-img {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  max-height: 250px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
-  display: block;
   border-radius: 12px;
-  margin: 0 auto;
+  display: block;
+  margin: 1rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
 }
 
 .text {
@@ -282,14 +280,13 @@ button:hover {
   }
 
   .section-img {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  max-height: 250px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
-  display: block;
   border-radius: 12px;
-  margin: 0 auto;
+  display: block;
+  margin: 1rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
 }
 }
 
@@ -435,14 +432,13 @@ select {
   font-family: 'Poppins', sans-serif;
 }
 .section-img {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  max-height: 250px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
-  display: block;
   border-radius: 12px;
-  margin: 0 auto;
+  display: block;
+  margin: 1rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
 }
 
 html, body {
