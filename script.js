@@ -1,44 +1,50 @@
+// Contact form submission with JSON handling because frankly idk how any of this stuff is working otherwise
 document.getElementById("contactForm")?.addEventListener("submit", async function(e) {
   e.preventDefault();
 
-  const formData = new FormData(this);
-  const response = await fetch("https://formspree.io/f/mnqekzoz", {
-    method: "POST",
-    body: formData,
-    headers: {
-      Accept: "application/json"
+  const form = this;
+  const data = {
+    name: form.name.value,
+    phone: form.phone.value,
+    message: form.message.value
+  };
+
+  try {
+    const response = await fetch("https://formspree.io/f/mgvzklry", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: JSON.stringify(data)
+    });
+
+    if (response.ok) {
+      form.style.display = "none";
+      const thankYou = document.getElementById("formThankYou");
+      if (thankYou) thankYou.style.display = "block";
+    } else {
+      throw new Error("Network response was not ok.");
+    }
+  } catch (error) {
+    alert("There was a problem sending your message. Please try again.");
+    console.error(error);
+  }
+});
+
+// Scroll fade-in animation
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+      observer.unobserve(entry.target);
     }
   });
+}, { threshold: 0.1 });
 
-  if (response.ok) {
-    this.style.display = "none";
-    const thankYou = document.getElementById("formThankYou");
-    if (thankYou) thankYou.style.display = "block";
-  } else {
-    alert("There was a problem sending your message. Please try again.");
-  }
-});
+document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
 
-// Scroll fade-in thingy
-const observer = new IntersectionObserver(
-  (entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        observer.unobserve(entry.target);
-      }
-    });
-  },
-  {
-    threshold: 0.1
-  }
-);
-
-document.querySelectorAll(".fade-in").forEach(el => {
-  observer.observe(el);
-});
-
-// Modal view for them gallery images
+// Modal image viewer for gallery
 document.addEventListener("DOMContentLoaded", function () {
   const modal = document.createElement("div");
   modal.id = "imageModal";
