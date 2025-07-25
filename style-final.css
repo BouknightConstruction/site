@@ -133,7 +133,7 @@ nav a.active {
 }
 
 
-/* --- Modern Navy Theme Additions --- */
+/* --- new stuff --- */
 
 /* Modern font and base reset */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
@@ -268,7 +268,6 @@ button:hover {
   border-radius: 8px;
 }
 
-/* Responsive updates */
 @media (max-width: 768px) {
   .section {
     flex-direction: column !important;
@@ -282,7 +281,7 @@ button:hover {
 
 
 
-/* Phase 2 Enhancements for Testimonials */
+/* update2 Enhancements for Testimonials */
 .testimonials {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -314,14 +313,14 @@ button:hover {
   margin-bottom: 0.5rem;
 }
 
-/* Star rating (static for now) */
+/* Star rating (static till i research) */
 .stars {
   color: #f5c518;
   font-size: 1.1rem;
 }
 
 
-/* Fade-in animation */
+/* Fade-in animate */
 
 
 @keyframes fadeInUp {
@@ -331,7 +330,7 @@ button:hover {
   }
 }
 
-/* Contact card improvements */
+/* Contact card stuff */
 .contact-card {
   background-color: rgba(255, 255, 255, 0.95);
   border-radius: 12px;
@@ -420,4 +419,10 @@ textarea,
 button,
 select {
   font-family: 'Poppins', sans-serif;
+}
+.section-img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
 }
