@@ -136,9 +136,6 @@ nav a.active {
 }
 
 
-/* --- new stuff --- */
-
-/* Modern font and base reset */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 body {
@@ -147,7 +144,6 @@ body {
   color: #2a2a2a;
 }
 
-/* Header and nav in navy */
 header, footer {
   background-color: #0d1b2a;
   color: white;
@@ -183,7 +179,6 @@ nav a.active {
   color: #fff;
 }
 
-/* Section and text improvements */
 .section {
   display: flex;
   flex-wrap: wrap;
@@ -218,7 +213,6 @@ nav a.active {
   color: #1b263b;
 }
 
-/* Form and inputs */
 form {
   display: flex;
   flex-direction: column;
@@ -254,7 +248,6 @@ button:hover {
   background-color: #1b263b;
 }
 
-/* Testimonials */
 .testimonial {
   background-color: white;
   padding: 2rem;
@@ -264,7 +257,6 @@ button:hover {
   border-radius: 10px;
 }
 
-/* Contact info styling */
 .contact-info {
   margin-top: 2rem;
   padding: 1.25rem;
@@ -290,9 +282,6 @@ button:hover {
 }
 }
 
-
-
-/* update2 Enhancements for Testimonials */
 .testimonials {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -324,14 +313,13 @@ button:hover {
   margin-bottom: 0.5rem;
 }
 
-/* Star rating (static till i research) */
+
 .stars {
   color: #f5c518;
   font-size: 1.1rem;
 }
 
 
-/* Fade-in animate */
 
 
 @keyframes fadeInUp {
@@ -341,7 +329,6 @@ button:hover {
   }
 }
 
-/* Contact card stuff */
 .contact-card {
   background-color: rgba(255, 255, 255, 0.95);
   border-radius: 12px;
@@ -356,7 +343,6 @@ button:hover {
 }
 
 
-/* Fix testimonial card width and prevent name wrap */
 .testimonials {
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
@@ -404,7 +390,6 @@ button:hover {
   line-height: 1.4;
 }
 
-/* Gallery styles */
 .gallery {
   padding: 2rem;
   text-align: center;
