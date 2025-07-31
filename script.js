@@ -1,4 +1,4 @@
-// Contact form submission with JSON handling because frankly idk how any of this stuff is working otherwise
+// Yeah, I had to vibe-code the JSON contact form thing here, whoops. Otherwise its original, mistakes and all.
 document.getElementById("contactForm")?.addEventListener("submit", async function(e) {
   e.preventDefault();
 
@@ -32,7 +32,6 @@ document.getElementById("contactForm")?.addEventListener("submit", async functio
   }
 });
 
-// Scroll fade-in animation
 const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -44,7 +43,6 @@ const observer = new IntersectionObserver((entries, observer) => {
 
 document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
 
-// Modal image viewer for gallery
 document.addEventListener("DOMContentLoaded", function () {
   const modal = document.createElement("div");
   modal.id = "imageModal";
